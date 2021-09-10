@@ -1,0 +1,18 @@
+.heading img{
+    float:left;
+    padding-top:75px;
+    padding-left: 50px;
+    width: 100px;
+    height: 100px;
+    background:rgb(253, 253, 253);
+}
+.heading h1 {
+    
+    float:left;
+    text-align: center;
+    position: relative;
+    background-color:rgb(189, 10, 10);
+    font-size: 100px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
