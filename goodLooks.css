@@ -34,10 +34,6 @@ a:link {
     font-family: 'Courier New', Courier, monospace;
 
 }
-.wrapper{
-    font-family: 'Courier New', Courier, monospace;
-    color:rgb(83, 14, 116);
-}
 
 .intro {
     text-align: center;
@@ -46,12 +42,27 @@ a:link {
 
 }
 
+p{
+    color:rgb(85, 252, 34);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 35px;
+}
+
 h1{
     color:rgb(85, 252, 34);
     font-family: 'Courier New', Courier, monospace;
+    font-size: 65px;
 
 }
 .superbowl{
     color:rgb(85, 252, 34);
     font-family: 'Courier New', Courier, monospace;
+}
+
+.favFranchises{
+    color: rgb(85, 252, 34);
+    font-family: 'Courier New', Courier, monospace;
+    text-align:center;
+    list-style-type: none;
+    font-size: 30px;
 }
