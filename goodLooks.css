@@ -32,6 +32,8 @@ body {
     color:rgb(85, 252, 34);
     text-align: center;
     font-size: 35px;
+    font-family: 'Courier New', Courier, monospace;
+
 }
 
 a:link {  
@@ -45,5 +47,12 @@ a:link {
 .intro {
     text-align: center;
     color: rgb(85, 252, 34);
+    font-family: 'Courier New', Courier, monospace;
+
 }
 
+h1{
+    color:rgb(85, 252, 34);
+    font-family: 'Courier New', Courier, monospace;
+
+}
