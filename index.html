@@ -4,14 +4,17 @@
         <meta charset="UTF-8">
         <title>Stephen Risso World!</title> 
         <link rel="stylesheet" href="/Users/stevenrisso/Development/code/my-website/my-webby-web/goodLooks.css">
-        
+        <style>
+            .link{color:rgb(158, 104, 184);}
+            .link:hover{color:rgb(0, 15, 82);}
+        </style>
      </head>
 
     <body>
         <div class="wrapper">
             
-                <a href="https://www.instagram.com"> Instagram: @stevenrissso &nbsp; </a>
-                <a href="https://twitter.com/stevriss22">Twitter: @stevriss22 </a>
+                <a class='link' href="https://www.instagram.com"> Instagram: @stevenrissso &nbsp; </a>
+                <a class='link' href="https://twitter.com/stevriss22">Twitter: @stevriss22 </a>
             <br>
 
                 <div id="header">
@@ -21,8 +24,8 @@
 
 
             
-                <a href ="/Users/stevenrisso/Development/code/my-website/my-webby-web/bio.html"> <h1>Bio &nbsp; </h1> </a>
-                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> <h1> &nbsp; Click here for FREE Playstation 5!!!</h1> </a>
+                <a class='link' href ="/Users/stevenrisso/Development/code/my-website/my-webby-web/bio.html"> <h1>Bio &nbsp; </h1> </a>
+                <a class='link' href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> <h1> &nbsp; Click here for FREE Playstation 5!!!</h1> </a>
               
         </div> 
         
@@ -49,7 +52,8 @@
        <div class="superbowl">
 
            <h2>Enter your favorite team's name!</h2>
-
+           <img src="https://upload.wikimedia.org/wikipedia/commons/8/8f/Wikiproject_NFL_logo.svg" alt="NFL Logo">
+        
            <form>
                <label for="tname">Team Name: </label>
                 <fieldset>
@@ -182,7 +186,69 @@
            
        </div>
 
+       <img src="/Users/stevenrisso/Development/code/my-website/outtathisworld.JPG" alt="Outta this world">
 
+       <div class="jokes">
+          <h1>Want to hear a joke?</h1> 
+          <h2>Enter a number between 1 & 10</h2>
+
+        <form>
+            <label for='number'>Choose Number: </label>
+            <fieldset>
+                <input type="number" id="guess" name="number" placeholder="'1-10'" required/>
+            </fieldset>
+        
+        </form>
+
+        <input id="choose" type="submit" value="Make me laugh!">
+
+        <script>
+            document.getElementById('choose').addEventListener('click', function(){
+
+                var input = document.getElementById('guess').value;
+
+                
+                if(input === '1'){
+                        alert("When life gives you melons, you might be dyslexic");
+                        return input;
+                    }else if(input === '2'){
+                        alert("Two fish were sitting in a tank. One says to the other 'How do we drive this thing?!' ");
+                        return;
+                    }else if(input === '3'){
+                        alert("A dung beetle walks into a bar and asks 'is this stool taken?'");
+                        return;
+                    }else if(input === '4'){
+                        alert("Adam and Eve were the first ones to ignore Apples terms and conditions");
+                        return;
+                    }else if(input === '5'){
+                        alert("It takes alot of balls to golf the way I do");
+                        return;
+                    }else if(input === '6'){
+                        alert("Russian dolls are so full of themselves");
+                        return;
+                    }else if(input === '7'){
+                        alert("Always borrow money from a pessimist. They will never expect it back!");
+                        return;
+                    }else if(input === '8'){
+                        alert("People who take care of chickens are just chicken tenders");
+                        return;
+                    }else if(input ==='9'){
+                        alert("Blunt pencils are really pointless");
+                        return;
+                    }else if(input === '10'){
+                        alert("The man who invented velcro has died.... RIP")
+                        return;
+                    }else{
+                        alert("Please enter a number between ONE and TEN");
+                        return;
+                    }
+                
+
+            });
+        </script>
+
+
+       </div>
        
     </body>
  </html>
