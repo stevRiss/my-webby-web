@@ -33,16 +33,24 @@
 
        <h1>How many Super Bowls does your favortie NFL team have?</h1>
        <div class="superbowl">
+
            <h2>Enter your favorite team's name!</h2>
+
            <form>
                <label for="tname">Team Name: </label>
-               <input type="text" id="team" name="tname">
-               <input id="submit" type="submit" value='Enter'>            
+
+                <fieldset>
+                    <input type="text" id="team" name="tname" placeholder="'Patriots'" required/>
+                </fieldset>
+
             </form>
-            
-               <script>
-                   function nflSuperBowls(team){
-                        const teams = [{
+
+            <input id="submit" type="submit" value='Enter'> 
+
+            <script>
+                   
+                    
+                   var teams = [{
                             key:'Patriots',
                             value:'6 Super Bowls'
                         },{
@@ -137,11 +145,35 @@
                             value:'No Super Bowls'
                         }];
 
+                    document.getElementById('submit').addEventListener('click', function() {
+
+                        var userInput = document.getElementById('team').value, wins = null;
+
+                       // if(userInput === ""){
+                       //     alert('Enter One NFL Team Name Please!');
+                     //       return false;
+                     //   }
                         
+                        for(i=0; i < teams.length-1; i++){
+                            if(teams[i].key === userInput){
+                                wins = teams[i];
+                                break;
+                                
+                            }
                         }
-                    document.getElementById('')
+                        if (wins){
+                            alert("The " + wins.key + " have " + wins.value + "!");
+                            return;
+                        } else if(userInput === ""){
+                            alert('Enter One NFL Team Name Please!');
+                            return false;
+                        }else{
+                            alert( "That is not an NFL team!(make sure you capitalize!!)");
+                            return;
+                        }
+                    });
                     
-               </script>
+            </script>
            
        </div>
 
