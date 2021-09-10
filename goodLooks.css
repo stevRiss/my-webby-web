@@ -1,33 +1,24 @@
 body {
-   /* background-color: black;*/
+   background-color: black;
 }
-/*.socials a:link {
-    font-size:30px;
-    font-weight: bold;
-    color:rgb(85, 252, 34);
-    float: left;
-    font-family: 'Courier New', Courier, monospace;
 
-}
-*/
 #header img{
-    margin: 0 auto;
+    /*margin: 0 auto;*/
     float: right;
-    padding-left: 50px;
     position: relative;
     width: 100px;
     height: 100px;
 }
-/*
+
 #header h1{
-    margin: 0 auto;
-    float: left;
+    /*margin: 0 auto;
+    float: left;*/
     text-align: center;
     color: rgb(85, 252, 34);
-    font-size:75px;
+    font-size:85px;
     font-family: 'Courier New', Courier, monospace;
 }
-*/
+
 #briefintro{
     color:rgb(85, 252, 34);
     text-align: center;
@@ -39,9 +30,13 @@ body {
 a:link {  
     font-size: 30px;
     float:left;
-    color:rgb(85, 252, 34);
+    color:rgb(83, 14, 116);
     font-family: 'Courier New', Courier, monospace;
 
+}
+.wrapper{
+    font-family: 'Courier New', Courier, monospace;
+    color:rgb(83, 14, 116);
 }
 
 .intro {
@@ -55,4 +50,8 @@ h1{
     color:rgb(85, 252, 34);
     font-family: 'Courier New', Courier, monospace;
 
+}
+.superbowl{
+    color:rgb(85, 252, 34);
+    font-family: 'Courier New', Courier, monospace;
 }

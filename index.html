@@ -8,28 +8,41 @@
      </head>
 
     <body>
-        
-        <a href="https://www.instagram.com"> Instagram: @stevenrissso &nbsp; </a>
-        <a href="https://twitter.com/stevriss22">Twitter: @stevriss22 </a>
-
-        <a href ="/Users/stevenrisso/Development/code/my-website/my-webby-web/bio.html"> <h1>Bio &nbsp; </h1> </a>
-        <a href="/Users/stevenrisso/Development/code/my-website/my-webby-web/tab2.html"> <h1> &nbsp; Misc Page</h1> </a>
-         
         <div class="wrapper">
-            <div id="header">
-                <h1>Stephen Risso World!</h1>
-                <img src ="https://upload.wikimedia.org/wikipedia/commons/6/6b/Rotating_globe.gif" alt="Spinning Globe"/>
-            </div>
-            <div id="briefintro">
-                <h2>Hello world, Welcome to my website!</h2>
-    
-                <p>Obviously, I am Stephen Risso its a pleasure to meet you! I am going to be a software engineering student
-                    at the Flatiron School for the upcoming semester. On this website you will find a bio of me, some games, 
-                    and some other cool things! Go take a look for yourself!
-                </p>
-    
-            </div>
+            
+                <a href="https://www.instagram.com"> Instagram: @stevenrissso &nbsp; </a>
+                <a href="https://twitter.com/stevriss22">Twitter: @stevriss22 </a>
+            <br>
+
+                <div id="header">
+                    <h1>Stephen Risso World!</h1>
+                    <img src ="https://upload.wikimedia.org/wikipedia/commons/6/6b/Rotating_globe.gif" alt="Spinning Globe"/>
+                </div>
+
+
+            
+                <a href ="/Users/stevenrisso/Development/code/my-website/my-webby-web/bio.html"> <h1>Bio &nbsp; </h1> </a>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> <h1> &nbsp; Click here for FREE Playstation 5!!!</h1> </a>
+              
         </div> 
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        
+        <div id="briefintro">
+            <h2>Hello world, Welcome to my website!</h2>
+
+                <p>Obviously, I am Stephen Risso its a pleasure to meet you! I am going to be a software engineering student
+                at the Flatiron School for the upcoming semester. On this website you will find a bio of me, some games, 
+                and some other cool things! Go take a look for yourself!
+                </p>
+
+        </div>
 
        <h1>How many Super Bowls does your favortie NFL team have?</h1>
        <div class="superbowl">
@@ -38,18 +51,15 @@
 
            <form>
                <label for="tname">Team Name: </label>
-
                 <fieldset>
                     <input type="text" id="team" name="tname" placeholder="'Patriots'" required/>
                 </fieldset>
-
             </form>
 
             <input id="submit" type="submit" value='Enter'> 
 
+            
             <script>
-                   
-                    
                    var teams = [{
                             key:'Patriots',
                             value:'6 Super Bowls'
@@ -148,11 +158,6 @@
                     document.getElementById('submit').addEventListener('click', function() {
 
                         var userInput = document.getElementById('team').value, wins = null;
-
-                       // if(userInput === ""){
-                       //     alert('Enter One NFL Team Name Please!');
-                     //       return false;
-                     //   }
                         
                         for(i=0; i < teams.length-1; i++){
                             if(teams[i].key === userInput){
@@ -172,7 +177,6 @@
                             return;
                         }
                     });
-                    
             </script>
            
        </div>
