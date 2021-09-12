@@ -48,10 +48,11 @@
 
         </div>
 
-       <h1>How many Super Bowls does your favortie NFL team have?</h1>
-       <div class="superbowl">
+       
 
-           <h2>Enter your favorite team's name!</h2>
+       <div class="superbowl">
+            <h1>How many Super Bowls does your favortie NFL team have?</h1>
+            <h2>Enter your favorite team's name!</h2>
            <img src="https://upload.wikimedia.org/wikipedia/commons/8/8f/Wikiproject_NFL_logo.svg" alt="NFL Logo">
         
            <form>
@@ -86,6 +87,9 @@
                         },{
                             key:'Raiders',
                             value:'3 Super Bowls'
+                        },{
+                            key:'Panthers',
+                            value:'0 Super Bowls'
                         },{
                             key:'Broncos',
                             value:'3 Super Bowls'
@@ -192,23 +196,23 @@
           <h1>Want to hear a joke?</h1> 
           <h2>Enter a number between 1 & 10</h2>
 
-        <form>
-            <label for='number'>Choose Number: </label>
-            <fieldset>
+            <form>
+                <label for='number'>Choose Number: </label>
+                <fieldset>
                 <input type="number" id="guess" name="number" placeholder="'1-10'" required/>
-            </fieldset>
+                </fieldset>
         
-        </form>
+            </form>
 
-        <input id="choose" type="submit" value="Make me laugh!">
+            <input id="choose" type="submit" value="Make me laugh!">
 
-        <script>
-            document.getElementById('choose').addEventListener('click', function(){
+            <script>
+                document.getElementById('choose').addEventListener('click', function(){
 
-                var input = document.getElementById('guess').value;
+                    var input = document.getElementById('guess').value;
 
                 
-                if(input === '1'){
+                    if(input === '1'){
                         alert("When life gives you melons, you might be dyslexic");
                         return input;
                     }else if(input === '2'){
@@ -242,13 +246,11 @@
                         alert("Please enter a number between ONE and TEN");
                         return;
                     }
-                
-
-            });
-        </script>
+                });
+            </script>
 
 
-       </div>
+        </div>
        
     </body>
  </html>

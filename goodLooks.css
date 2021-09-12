@@ -30,6 +30,7 @@ body {
 a:link {  
     font-size: 30px;
     float:left;
+    background-color: rgb(49, 47, 47);
     /*color:rgb(83, 14, 116);*/
     font-family: 'Courier New', Courier, monospace;
 
@@ -76,6 +77,4 @@ ol.favFranchises li{
 .jokes{
     color: rgb(85, 252, 34);
     font-family: 'Courier New', Courier, monospace;
-
- 
 }
